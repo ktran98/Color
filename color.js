@@ -43,14 +43,15 @@ Color.blueIntensity = function(rgb){
 }
 
 //brightness
-Color.function(){
+Color.brightness = function(rgb){
 let bright = (Color.redIntensity(rgb)+Color.greenIntensity(rgb)+Color.blueIntensity(rgb))/3;
   return bright;
 }
 
 //complement
+Color.complement = function(rgb){
 let comp = []
   for(let c=0;c<3;c++){
-  comp.push()
+  comp[c].push(255-rgb[c])
 }
 return comp;
