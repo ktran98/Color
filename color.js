@@ -30,19 +30,27 @@ Color.redIntensity = function(rgb){
 
 //greenIntensity
 Color.greenIntensity = function(rgb){
-  let greenIntensity = rgb[1]/225*100
+  let greenIntensity = rgb[1]/255*100
   greenIntensity = Math.round(greenIntensity)
     return greenIntensity
-};
+}
 
 //blueIntensity
-Color.greenIntensity = function(rgb){
-  let blueIntensity = rgb[2]/225*100
+Color.blueIntensity = function(rgb){
+  let blueIntensity = rgb[2]/255*100
   blueIntensity = Math.round(blueIntensity)
     return blueIntensity
-};
+}
 
 //brightness
-var bright = 
+Color.function(){
+let bright = (Color.redIntensity(rgb)+Color.greenIntensity(rgb)+Color.blueIntensity(rgb))/3;
+  return bright;
+}
 
 //complement
+let comp = []
+  for(let c=0;c<3;c++){
+  comp.push()
+}
+return comp;
